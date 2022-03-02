@@ -1,5 +1,7 @@
-import { FlatList, StyleSheet, Alert, View } from "react-native";
+import { FlatList, StyleSheet, Alert } from "react-native";
 import React, { useState } from "react";
+import EditScreenInfo from "./components/EditScreenInfo";
+import { Text, View } from "./components/Themed";
 import { RootTabScreenProps } from "./types";
 import ListItem from "./components/ListItem";
 import AddItem from "./components/AddItem";

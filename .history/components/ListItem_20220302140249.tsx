@@ -9,7 +9,7 @@ export default function ListItem({ item, deleteItem }: any) {
     <TouchableOpacity style={styles.listItem}>
       <View style={styles.listItemView}>
         <Text style={styles.listItemText}>{item.text}</Text>
-        <Ionicons style={styles.icon} name="close-outline" size={30} color="firebrick" onPress={() => deleteItem(item.id)}></Ionicons>
+        <Ionicons style={styles.icon} name="close-outline" size={40} color="firebrick" onPress={() => deleteItem(item.id)}></Ionicons>
       </View>
     </TouchableOpacity>
   );

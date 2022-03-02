@@ -9,7 +9,7 @@ export default function ListItem({ item, deleteItem }: any) {
     <TouchableOpacity style={styles.listItem}>
       <View style={styles.listItemView}>
         <Text style={styles.listItemText}>{item.text}</Text>
-        <Ionicons style={styles.icon} name="close-outline" size={30} color="firebrick" onPress={() => deleteItem(item.id)}></Ionicons>
+        <Ionicons name="close-outline" size={20} color="firebrick" onPress={() => deleteItem(item.id)}></Ionicons>
       </View>
     </TouchableOpacity>
   );
@@ -32,6 +32,6 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   icon: {
-    fontWeight: "600",
+    fontWeight: 600,
   },
 });
